@@ -1,11 +1,83 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Andina Foods</title>
-<style>body{font-family:Inter,Arial;margin:0;padding:30px;background:#f7f3ee;color:#222}a.btn{display:inline-block;padding:10px 14px;background:#2f8a4d;color:#fff;border-radius:8px;text-decoration:none}</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Andina Foods — Productos Naturales del Perú</title>
+  <style>
+    :root{
+      --verde:#2f8a4d;
+      --marron:#5a3a2a;
+      --beige:#f6efe6;
+      --card-bg:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',Arial;background:var(--beige);color:#222}
+    header{background:var(--verde);color:#fff;padding:22px;text-align:center}
+    header h1{margin:0;font-size:1.6rem}
+    header p{margin:4px 0 0;font-size:0.95rem;opacity:0.9}
+    nav{text-align:center;margin-top:8px}
+    nav a{color:#fff;text-decoration:none;font-weight:600;margin:0 10px}
+    .container{max-width:1100px;margin:30px auto;padding:0 16px}
+    h2.section-title{color:var(--marron);margin-bottom:18px;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--card-bg);border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.08);padding:16px;text-align:center}
+    .card img{width:100%;border-radius:10px;margin-bottom:10px}
+    .card h3{margin:0;color:var(--marron)}
+    .card p{margin:6px 0 10px;color:#555;font-size:0.9rem}
+    .price{font-weight:700;color:var(--verde)}
+    footer{margin-top:40px;padding:18px 0;text-align:center;background:var(--marron);color:#fff;font-size:0.9rem}
+    a.btn{display:inline-block;margin-top:14px;padding:10px 14px;background:var(--verde);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+  </style>
 </head>
 <body>
-  <h1>Andina Foods</h1>
-  <p>Catálogo de productos orgánicos y saludables. Aquí puedes añadir tus productos, blog y puntos de venta.</p>
-  <p><a class="btn" href="index.html">← Volver a Grupo Andina</a></p>
+  <header>
+    <h1>🥗 Andina Foods</h1>
+    <p>Productos naturales y saludables del Perú</p>
+    <nav><a href="index.html">← Volver a Grupo Andina</a></nav>
+  </header>
+
+  <main class="container">
+    <section id="productos">
+      <h2 class="section-title">Nuestros Productos</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1590080875831-74b6d71b7d87?auto=format&fit=crop&w=600&q=60" alt="Snack de kiwicha">
+          <h3>Snack de Kiwicha</h3>
+          <p>Crujiente mezcla andina rica en proteínas y fibra.</p>
+          <div class="price">S/ 6.50</div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1572552635923-7011d54d0a19?auto=format&fit=crop&w=600&q=60" alt="Quinua orgánica">
+          <h3>Quinua Orgánica 500 g</h3>
+          <p>Grano andino alto en proteína y minerales, cultivado sosteniblemente.</p>
+          <div class="price">S/ 12.00</div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=60" alt="Jugo de Camu Camu">
+          <h3>Jugo de Camu Camu</h3>
+          <p>Bebida natural rica en vitamina C y sabor tropical peruano.</p>
+          <div class="price">S/ 8.00</div>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1623156343363-3e05e02bbd30?auto=format&fit=crop&w=600&q=60" alt="Cereal de Cañihua">
+          <h3>Cereal de Cañihua</h3>
+          <p>Ideal para desayunos energéticos y nutritivos.</p>
+          <div class="price">S/ 9.50</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" style="margin-top:40px;text-align:center">
+      <h2 class="section-title">Distribuidores / Contacto</h2>
+      <p>📞 Teléfono: 934 258 742</p>
+      <p>📧 Correo: <a href="mailto:andinafoods@grupoandina.com">andinafoods@grupoandina.com</a></p>
+      <a class="btn" href="index.html">← Volver al Portal Principal</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Andina Foods · Grupo Andina S.A.C.
+  </footer>
 </body>
 </html>
