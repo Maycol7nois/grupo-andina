@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grupo Andina</title>
+  <meta name="description" content="Grupo Andina — Andina Foods, Andina Tours, Andina Tech" />
+  <style>
+    :root{
+      --verde:#2f8a4d;
+      --azul:#2b6fb3;
+      --beige:#f6efe6;
+      --marron:#5a3a2a;
+      --card-bg:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Arial;background:var(--beige);color:#222}
+    header{background:linear-gradient(90deg,var(--verde),var(--azul));color:#fff;padding:28px 16px;text-align:center}
+    header h1{margin:0;font-size:1.6rem}
+    header p{margin:6px 0 0;opacity:0.95}
+    .container{max-width:1100px;margin:28px auto;padding:0 16px}
+    .intro{text-align:center;margin-bottom:22px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card-bg);border-radius:12px;padding:18px;box-shadow:0 8px 30px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+    .card h3{margin:0;color:var(--marron)}
+    .card p{margin:0;color:#444;flex:1}
+    .btn{align-self:stretch;text-align:center;padding:10px 12px;border-radius:10px;background:var(--marron);color:#fff;text-decoration:none;font-weight:600}
+    .tag{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(0,0,0,0.04);font-size:0.85rem;color:#333}
+    footer{margin-top:26px;padding:18px 0;text-align:center;color:#666;font-size:0.9rem}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Grupo Andina</h1>
+    <p>Una empresa, tres rubros — Andina Foods · Andina Tours · Andina Tech</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <p class="tag">Identidad corporativa unificada · Sostenibilidad · Calidad</p>
+      <h2 style="margin:12px 0 6px">Nuestras Unidades de Negocio</h2>
+      <p style="margin:0;color:#555">Haz clic en cualquiera para entrar a su sitio específico.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card" aria-labelledby="foods-title">
+        <h3 id="foods-title">🥗 Andina Foods</h3>
+        <p>Productos orgánicos y saludables: snacks, cereales y jugos. Catálogo, puntos de venta y blog de contenido.</p>
+        <a class="btn" href="andinafoods.html">Ir a Andina Foods →</a>
+      </article>
+
+      <article class="card" aria-labelledby="tours-title">
+        <h3 id="tours-title">🏞️ Andina Tours</h3>
+        <p>Experiencias sostenibles y turismo vivencial en la sierra y selva. Reserva de paquetes y contacto multilingüe.</p>
+        <a class="btn" href="andinatours.html">Ir a Andina Tours →</a>
+      </article>
+
+      <article class="card" aria-labelledby="tech-title">
+        <h3 id="tech-title">💻 Andina Tech</h3>
+        <p>Equipos tecnológicos reacondicionados con garantía. Catálogo, soporte y compra directa por WhatsApp.</p>
+        <a class="btn" href="andinatech.html">Ir a Andina Tech →</a>
+      </article>
+    </section>
+
+    <footer>
+      <p>© Grupo Andina · Cohesión visual para negocios independientes</p>
+      <p style="font-size:0.85rem;color:#888;margin-top:6px">Puedes publicar cada sitio (andinafoods.html, andinatours.html, andinatech.html) en el mismo repositorio y los enlaces funcionarán.</p>
+    </footer>
+  </main>
+</body>
+</html>
