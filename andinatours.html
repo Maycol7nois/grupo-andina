@@ -1,11 +1,110 @@
 <!doctype html>
 <html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Andina Tours</title>
-<style>body{font-family:Inter,Arial;margin:0;padding:30px;background:#eef6fb;color:#222}a.btn{display:inline-block;padding:10px 14px;background:#2b6fb3;color:#fff;border-radius:8px;text-decoration:none}</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Andina Tours — Viajes y Experiencias Sostenibles</title>
+  <style>
+    :root{
+      --verde:#2f8a4d;
+      --azul:#2b6fb3;
+      --marron:#5a3a2a;
+      --beige:#f6efe6;
+      --card-bg:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Segoe UI',Arial;background:var(--beige);color:#222}
+    header{background:linear-gradient(90deg,var(--verde),var(--azul));color:#fff;padding:22px;text-align:center}
+    header h1{margin:0;font-size:1.6rem}
+    header p{margin:4px 0 0;font-size:0.95rem;opacity:0.9}
+    nav{text-align:center;margin-top:8px}
+    nav a{color:#fff;text-decoration:none;font-weight:600;margin:0 10px}
+    .container{max-width:1100px;margin:30px auto;padding:0 16px}
+    h2.section-title{color:var(--marron);margin-bottom:18px;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+    .card{background:var(--card-bg);border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.08);padding:16px;text-align:center}
+    .card img{width:100%;border-radius:10px;margin-bottom:10px;height:200px;object-fit:cover}
+    .card h3{margin:0;color:var(--marron)}
+    .card p{margin:6px 0 10px;color:#555;font-size:0.9rem}
+    form label{display:block;margin-top:10px;margin-bottom:4px;font-weight:600;color:var(--marron)}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1)}
+    button{margin-top:12px;padding:10px 16px;border:none;border-radius:8px;background:var(--azul);color:#fff;font-weight:600;cursor:pointer}
+    button:hover{background:#215f95}
+    footer{margin-top:40px;padding:18px 0;text-align:center;background:var(--marron);color:#fff;font-size:0.9rem}
+    a.btn{display:inline-block;margin-top:14px;padding:10px 14px;background:var(--verde);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+  </style>
 </head>
 <body>
-  <h1>Andina Tours</h1>
-  <p>Experiencias turísticas sostenibles. Aquí puedes poner paquetes, formulario de reserva y testimonios.</p>
-  <p><a class="btn" href="index.html">← Volver a Grupo Andina</a></p>
+  <header>
+    <h1>🏞️ Andina Tours</h1>
+    <p>Viajes auténticos y sostenibles por la Sierra y Selva del Perú</p>
+    <nav><a href="index.html">← Volver a Grupo Andina</a></nav>
+  </header>
+
+  <main class="container">
+    <section id="experiencias">
+      <h2 class="section-title">Experiencias Destacadas</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1549887534-4b6b4e3b27c0?auto=format&fit=crop&w=800&q=60" alt="Camino Inca">
+          <h3>Camino Inca a Machu Picchu</h3>
+          <p>Recorre los senderos ancestrales con guías locales y disfruta paisajes únicos.</p>
+          <strong>Desde S/ 450</strong>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&w=800&q=60" alt="Selva amazónica">
+          <h3>Explora la Selva Amazónica</h3>
+          <p>Conecta con la naturaleza en lodges ecológicos de Madre de Dios.</p>
+          <strong>Desde S/ 520</strong>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1601758123927-1965c6b3b43b?auto=format&fit=crop&w=800&q=60" alt="Lago Titicaca">
+          <h3>Vivencia en el Lago Titicaca</h3>
+          <p>Hospédate con familias locales y descubre la cultura Aymara.</p>
+          <strong>Desde S/ 390</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserva" style="margin-top:40px">
+      <h2 class="section-title">Reserva tu viaje</h2>
+      <form id="reservaForm">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" required>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" required>
+        <label for="destino">Destino</label>
+        <select id="destino" required>
+          <option>Camino Inca</option>
+          <option>Selva Amazónica</option>
+          <option>Lago Titicaca</option>
+        </select>
+        <label for="fecha">Fecha de viaje</label>
+        <input type="date" id="fecha" required>
+        <button type="submit">Enviar reserva</button>
+      </form>
+    </section>
+
+    <section id="contacto" style="margin-top:40px;text-align:center">
+      <h2 class="section-title">Contacto</h2>
+      <p>📞 Teléfono: 934 258 742</p>
+      <p>📧 Correo: <a href="mailto:andinatours@grupoandina.com">andinatours@grupoandina.com</a></p>
+      <a class="btn" href="index.html">← Volver al Portal Principal</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Andina Tours · Grupo Andina S.A.C.
+  </footer>
+
+  <script>
+  // Simple feedback al enviar la reserva
+  document.getElementById('reservaForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    alert('Tu reserva ha sido registrada. Nos pondremos en contacto contigo para confirmar los detalles. ¡Gracias por elegir Andina Tours!');
+    e.target.reset();
+  });
+  </script>
 </body>
 </html>
+
